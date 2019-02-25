@@ -1,0 +1,87 @@
+
+    <view bindtap="back" class="bk">
+        <image src="../photo/back.png"></image>
+    </view>
+
+<view class="container page{{isiPhoneX?' ct-iphonex':''}}">
+    <view class="page__bd">
+        <view class="weui-panel">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">
+                      风雨欲来
+                    </view>
+                    <view class="weui-media-box__desc">
+                        <view class="p">2018年6月，上线</view>
+                        <view class="p">2018年7月易生活服务上线</view>
+                        <view class="p">----------------------------------------------------------------------------</view>
+                        <view class="p">2018年8月用户破千</view>
+                        <view class="p" style="margin-top: 10rpx">问题反馈、合作等，请联系 <text selectable="true">14733051@qq.com</text>
+                        </view>
+                        <view class="p btn-share">
+                            <button bindtap="shareEvent" class="js-btn-share" openType="share" type="default">推荐「Eku闪现手持弹幕」给好友 😃</button>
+                        </view>
+                        <view class="ad-block">
+                            <ad class="ad" unitId="adunit-0a20011fbd126e5c"></ad>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-panel">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">
+                       打赏
+                    </view>
+                    <view class="weui-media-box__desc">
+                        <view class="p">编写不易，万水千山总是情，来瓶可乐行不行。请作者来瓶可乐吧。</view>
+            
+                        <view class="p">
+                            点击下图，然后长按图片选择“识别图中二维码”。
+                        </view>
+                        <image src="{{imgalist[0]}}" data-src="{{image}}" bindtap="previewImage" class='reward'></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-panel{{canHideTabBar?' large-bottom':''}}">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">
+                        小程序说明
+                    </view>
+                    <view class="weui-media-box__desc">
+                        <view class="p">1. 这款小程序非原创想法但觉得有意思模仿另外几款手持弹幕取其优点</view>
+                        <view class="p">2. 该小程序没有商业用途</view>
+                        <view class="p">3. 小程序的最初目的是为了给用户更好的体验</view>
+                        <view class="p">4. 小程序和另一款小程序一样为了更好的生活而创造</view>
+                        <view class="p">5. 希望你们天天快乐</view>
+                        
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+        <view class="weui-panel{{canHideTabBar?' large-bottom':''}}">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">
+                        关注服务号
+                    </view>
+                    <view class="weui-media-box__desc">
+                    <view class="p">关注服务号后期会不断推出好玩、实用的小程序。欢迎使用另一款小程序易生活，易生活小程序是为了学生更好的生活而推出的一款小程序</view>
+                    <view class="p">----------</view>
+                    <view class="p">点击扫码关注服务号，祝您天天开心</view>
+                      </view>
+                    </view>
+                 </view>
+             </view>
+        
+<block wx:if="{{canHideTabBar}}">
+    <import src="../../templates/nav.wxml"></import>
+    <view class="{{platform}}{{isiPhoneX?' nav-iphonex':''}}">
+        <template is="nav" data="{{pagename:'about'}}"></template>
+    </view>
+</block>

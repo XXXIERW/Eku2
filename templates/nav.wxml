@@ -1,0 +1,20 @@
+<template name="nav">
+    <view class="nav">
+        <navigator class="item" hoverClass="none" openType="switchTab" url="/pages/index/index">
+            <image mode="scaleToFill" src="../../images/ico_home{{pagename=='home'?'_selected':''}}.png"></image>
+            <view></view>
+        </navigator>
+        <navigator class="item" hoverClass="none" openType="switchTab" url="/pages/countdown/countdown">
+            <image mode="scaleToFill" src="../../images/ico_countdown{{pagename=='countdown'?'_selected':''}}.png"></image>
+            <view></view>
+        </navigator>
+        <navigator class="item" hoverClass="none" openType="switchTab" url="/pages/meditation/meditation">
+            <image mode="scaleToFill" src="../../images/ico_meditation{{pagename=='meditation'?'_selected':''}}.png"></image>
+            <view></view>
+        </navigator>
+        <navigator class="item" hoverClass="none" openType="switchTab" url="/pages/about/about">
+            <image mode="scaleToFill" src="../../images/ico_about{{pagename=='about'?'_selected':''}}.png"></image>
+            <view></view>
+        </navigator>
+    </view>
+</template>

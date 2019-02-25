@@ -1,0 +1,81 @@
+<view bindtap="settingComplete" class="content" style="animation: {{flash}}; background: {{backgroundStyle[selectedBackgroundIndex].color}}">
+    <view animation="{{animation}}" class="popBox" id="popBox" style="top:{{popBoxTop}}px;">
+        <view class="pop-image" style="opacity: {{textOpacity}}; width: {{imageWidth}}; height: {{imageWidth}};">
+            <image mode="aspectFit" src="{{imageHeader}}"></image>
+        </view>
+        <view class="popCount">
+            <text class="popTxt" id="text" style=" opacity: {{textOpacity}};top:{{top}}px; color: {{textColor}}; font-size: {{textSize}}; height: {{sizeHeight}}; left: {{textWidth}}px; text-shadow: {{selectedStyleIndex==0?'':neons[neonIndex]}}">{{keywords}}</text>
+        </view>
+    </view>
+    <view animation="{{animation2}}" class="popBox" id="popBox2" style="top:{{popBoxTop}}px">
+        <view class="pop-image" style="opacity: {{textOpacity2}}; width: {{imageWidth}}; height: {{imageWidth}};">
+            <image mode="aspectFit" src="{{imageHeader}}"></image>
+        </view>
+        <view class="popCount">
+            <text class="popTxt" id="text2" style="opacity: {{textOpacity2}};top:{{top2}}px; color: {{textColor}}; font-size: {{textSize}}; height: {{sizeHeight}}; left: {{textWidth}}px; text-shadow: {{selectedStyleIndex==0?'':neons[neonIndex]}}">{{keywords}}</text>
+        </view>
+    </view>
+    <form bindsubmit="formSubmit">
+        <view animation="{{formAnim}}" catchtap="catch" class="sendForm" id="sendForm">
+            <view class="section">
+                <input bindblur="bindblur" bindconfirm="formSubmit" bindfocus="bindfocus" bindinput="bindinput" class="keywords" confirmType="done" name="keywords" placeholder="EkuEku弹幕，请点击输入文字" style="background: {{backgroundStyle[selectedBackgroundIndex].color}};" type="text" value="{{inputValue}}"></input>
+                <button formType="submit" hidden="{{sendHidden}}" openType="share" type="primary">发送</button>
+            </view>
+        </view>
+    </form>
+    <view animation="{{settingAnim}}" catchtap="catch" class="setting" id="setting" style="bottom: {{settingBottom}}">
+        <view style="background: #000; opacity: 0.7; width: 100%;position: absolute; top:0;bottom:0;"></view>
+        <view class="ad">
+            <ad unit-id="adunit-5668f92435f0d435"></ad>
+        </view>
+        <button bindtap="settingComplete" class="btncomplete">完成</button>
+        <view class="rowView">
+            <button class="buttonTitle">速度</button>
+            <button bindtap="selectSpeed" class="buttonItem" data-index="{{index}}" style="{{index==selectedSpeedIndex?'border: 2rpx solid #fff;':''}}" wx:for="{{speeds}}">{{item.value}}</button>
+        </view>
+        <view class="rowView">
+            <button class="buttonTitle">字号</button>
+            <button bindtap="selectSize" class="buttonItem" data-index="{{index}}" style="{{index==selectedSizeIndex?'border: 2rpx solid #fff;':''}}" wx:for="{{sizes}}">{{item.value}}</button>
+        </view>
+        <view class="rowView">
+            <button class="buttonTitle">颜色</button>
+            <button bindtap="selectColor" class="buttonColor" data-index="{{index}}" style="background: {{item.color}}; {{index==selectedColorIndex?'border: 2rpx solid #fff;':''}} " wx:for="{{colors}}"></button>
+        </view>
+        <view class="rowView">
+            <button class="buttonTitle">背景</button>
+            <button bindtap="selectBackground" class="buttonColor" data-index="{{index}}" style="background: {{item.color}}; {{index==selectedBackgroundIndex?'border: 2rpx solid #fff;':''}} " wx:for="{{backgroundStyle}}"></button>
+        </view>
+        <view class="rowView">
+            <button class="buttonTitle">文字</button>
+            <button bindtap="selectStyle" class="buttonItem" data-index="{{index}}" style="{{index==selectedStyleIndex?'border: 2rpx solid #fff;':''}}" wx:for="{{textStyle}}">{{item.value}}</button>
+        </view>
+        <view class="rowView">
+            <button bindtap="hideImage" class="buttonHideImage">{{imageWidth=='0'?'显示图片':'隐藏图片'}}</button>
+            <button bindtap="selectImage" class="buttonSelectImage">选择本地图片</button>
+        </view>
+        <view class="rowView">
+            <button catchtap="flash" class="buttonFlash" type="warn">闪屏</button>
+        </view>
+    </view>
+    <view class="ad1" style="visibility: {{ad1Visibility}}">
+        <view class="ad1_close"></view>
+    </view>
+    <view animation="{{rightSettingAnim}}" class="layout-setting" id="right-setting" style="right: {{settingRight}}px">
+        <button catchtap="imageDanmu" class="button-image">图片弹幕</button>
+        <view class="view-button">
+            <button catchtap="setting">
+                <image mode="aspectFit" src="../../images/setting.png"></image>
+            </button>
+        </view>
+        <view class="view-button">
+            <button catchtap="share" openType="share">
+                <image mode="aspectFit" src="../../images/share.png"></image>
+            </button>
+        </view>
+        <view class="view-button">
+            <button bindtap="abc" catchtap="abc">
+                <image mode="aspectFit" src="../../images/more.png"></image>
+            </button>
+        </view>
+    </view>
+</view>

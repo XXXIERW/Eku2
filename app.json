@@ -1,0 +1,17 @@
+{
+    "pages": [
+        "pages/danmu/danmu",
+        "pages/flash/flash",
+        "pages/image/image",
+        "pages/more/more",
+        "pages/test/test",
+        "pages/templates/nav"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#000",
+        "navigationBarTitleText": "Eku闪现手持弹幕",
+        "navigationBarTextStyle": "black",
+        "navigationStyle": "custom"
+    }
+}

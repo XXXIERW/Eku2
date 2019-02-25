@@ -1,0 +1,40 @@
+<view class="page">
+    <view bindtap="settingComplete" class="layout-text">
+        <text class="text" id="text" style=" font-size: {{textSize}}rpx;left: {{(screenWidth-textWidth-textHeight)/2}}px;top: {{textHeight>screenHeight?(textHeight-textWidth)/2:(textHeight-textWidth)/2+(screenHeight-textHeight)/2}}px; ">{{text}}</text>
+    </view>
+    <view animation="{{rightSettingAnim}}" class="layout-setting" id="right-setting" style="right: {{settingRight}}px">
+        <button catchtap="imageDanmu" class="button-image">文字弹幕</button>
+        <button catchtap="imageDanmu" class="button-image">图片弹幕</button>
+
+        <view class="view-button">
+            <button catchtap="setting">
+                <image mode="aspectFit" src="../../images/setting.png"></image>
+            </button>
+        </view>
+
+        <view class="view-button">
+            <button catchtap="share" openType="share">
+                <image mode="aspectFit" src="../../images/share.png"></image>
+            </button>
+        </view>
+
+        <view class="view-button">
+            <navigator url = "../js/index">
+                <image mode="aspectFit" src="../../images/more.png"></image>
+            </navigator>
+        </view>
+    </view>
+    <view class="layout-text-setting">
+        <view class="layout-text-select">
+            <view class="layout-size">
+                <button bindtap="selectSize" class="buttonItem" data-index="{{index}}" style="{{index==selectedSizeIndex?'border: 2rpx solid #fff;':''}}" wx:for="{{sizes}}">{{item.value}}</button>
+            </view>
+        </view>
+        <view class="layout-text-type">
+            <button>文字</button>
+            <button>字号</button>
+            <button>颜色</button>
+            <button>背景</button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,436 @@
+page {
+    width: 100%;
+    height: 100%;
+}
+
+.buttonHideImage {
+    font-size: 26rpx;
+    margin: 10rpx 30rpx 0rpx 40rpx;
+    padding: 0;
+    width: 200rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+}
+
+.buttonSelectImage {
+    width: 300rpx;
+    font-size: 26rpx;
+    margin: 10rpx 30rpx 0rpx 10rpx;
+    padding: 0;
+    height: 70rpx;
+    line-height: 70rpx;
+}
+
+.buttonFlash {
+    width: 90%;
+    padding: 0;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 35rpx;
+    text-align: center;
+}
+
+.ad1 {
+    margin-top: 50rpx;
+}
+
+.ad1_close {
+    width: 100rpx;
+    height: 50rpx;
+    background: #0f0;
+    z-index: 5;
+    position: absolute;
+    right: 50%;
+    top: 50rpx;
+    visibility: hidden;
+}
+
+.ad {
+    width: 100%;
+    height: 200rpx;
+}
+
+.content {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+}
+
+.popBox {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -400rpx;
+    top: 0;
+}
+
+.pop-image {
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.popBox image {
+    transform: rotate(90deg);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.popCont {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.popTxt {
+    padding-left: 400rpx;
+    color: #fff;
+    font-size: 160rpx;
+    display: inline-block;
+    transform: rotate(90deg) translateY(-50%);
+    position: absolute;
+    bottom: 0;
+    height: 380rpx;
+    white-space: nowrap;
+    letter-spacing: 30rpx;
+}
+
+@-webkit-keyframes first {
+    from {
+        top: 3000rpx;
+    }
+
+    to {
+        top: -100%;
+    }
+}
+
+@keyframes first {
+    from {
+        top: 3000rpx;
+    }
+
+    to {
+        top: -100%;
+    }
+}
+
+.sendForm {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rpx;
+    padding-bottom: 5rpx;
+    z-index: 2;
+    margin-right: 120rpx;
+    background: rgba(0,0,0,0);
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70rpx;
+    padding-left: 20rpx;
+    margin-bottom: 15rpx;
+    background: rgba(0,0,0,0);
+}
+
+.section button {
+    width: 150rpx;
+    height: 100%;
+    font-size: 30rpx;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.section .keywords {
+    width: 100%;
+    height: 100%;
+    font-size: 30rpx;
+    color: #fff;
+    border: 2rpx solid #fff;
+    border-radius: 45rpx;
+    padding-left: 20rpx;
+    margin-right: 20rpx;
+    opacity: 0.7;
+}
+
+.btnsumbit button {
+    width: 100rpx;
+    height: 70rpx;
+    padding: 0;
+    margin: 0;
+    font-size: 30rpx;
+    background: blue;
+    color: #fff;
+    line-height: 70rpx;
+}
+
+.view-button {
+    width: 80rpx;
+    height: 80rpx;
+    background: #333333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40rpx;
+}
+
+.view-button button {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background: none;
+    font-size: 0;
+    color: #fff;
+}
+
+.view-button button::after {
+    border: none;
+}
+
+.view-button image {
+    width: 100%;
+    height: 100%;
+}
+
+.btnsetting button {
+    width: 70rpx;
+    height: 70rpx;
+    padding: 0;
+    margin-right: 10rpx;
+    font-size: 30rpx;
+    background: blue;
+    color: #fff;
+    line-height: 70rpx;
+    background: #000;
+    margin-left: 10rpx;
+}
+
+.btnsetting image {
+    width: 100%;
+    height: 100%;
+}
+
+.btnShare button {
+    width: 70rpx;
+    height: 70rpx;
+    padding: 0;
+    margin-right: 10rpx;
+    font-size: 30rpx;
+    border-radius: 50%;
+    background: blue;
+    color: #fff;
+    line-height: 70rpx;
+    background: #000;
+    margin-left: 10rpx;
+}
+
+.btnShare image {
+    width: 100%;
+    height: 100%;
+}
+
+.setting {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.btncomplete {
+    margin-right: 20rpx;
+    margin-top: 20rpx;
+    width: 100rpx;
+    height: 50rpx;
+    padding: 0;
+    font-size: 25rpx;
+    color: #fff;
+    line-height: 50rpx;
+    border: 2rpx solid #fff;
+    border-radius: 35rpx;
+    background: #000;
+}
+
+.buttonTitle {
+    color: #fff;
+    font-size: 26rpx;
+    margin: 10rpx 30rpx 0rpx 10rpx;
+    padding: 0;
+    width: 70rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    background: rgba(0,0,0,0);
+}
+
+.buttonItem {
+    color: #fff;
+    font-size: 26rpx;
+    margin: 10rpx 20rpx 20rpx 10rpx;
+    padding: 0;
+    border-radius: 50rpx;
+    width: 70rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    background: #343434;
+}
+
+.buttonColor {
+    margin: 10rpx 20rpx 20rpx 10rpx;
+    padding: 0;
+    border-radius: 50rpx;
+    width: 70rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+}
+
+.rowView {
+    flex-direction: row;
+    display: flex;
+    padding-left: 20rpx;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+}
+
+@-webkit-keyframes neon0 {
+    from {
+        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #CCCCCC,0 0 35px #CCCCCC,0 0 40px #CCCCCC,0 0 45px #CCCCCC,0 0 50px #CCCCCC;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #CCCCCC,0 0 35px #CCCCCC,0 0 40px #CCCCCC,0 0 45px #CCCCCC,0 0 50px #CCCCCC;
+    }
+}
+
+@-webkit-keyframes neon1 {
+    from {
+        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #CB0032,0 0 35px #CB0032,0 0 40px #CB0032,0 0 45px #CB0032,0 0 50px #CB0032;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #CB0032,0 0 35px #CB0032,0 0 40px #CB0032,0 0 45px #CB0032,0 0 50px #CB0032;
+    }
+}
+
+@-webkit-keyframes neon2 {
+    from {
+        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #FF6735,0 0 35px #FF6735,0 0 40px #FF6735,0 0 45px #FF6735,0 0 50px #FF6735;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #FF6735,0 0 35px #FF6735,0 0 40px #FF6735,0 0 45px #FF6735,0 0 50px #FF6735;
+    }
+}
+
+@-webkit-keyframes neon3 {
+    from {
+        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #FFFF00,0 0 35px #FFFF00,0 0 40px #FFFF00,0 0 45px #FFFF00,0 0 50px #FFFF00;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #FFFF00,0 0 35px #FFFF00,0 0 40px #FFFF00,0 0 45px #FFFF00,0 0 50px #FFFF00;
+    }
+}
+
+@-webkit-keyframes neon4 {
+    from {
+        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #23FFBD,0 0 35px #23FFBD,0 0 40px #23FFBD,0 0 45px #23FFBD,0 0 50px #23FFBD;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #23FFBD,0 0 35px #23FFBD,0 0 40px #23FFBD,0 0 45px #23FFBD,0 0 50px #23FFBD;
+    }
+}
+
+@-webkit-keyframes neon5 {
+    from {
+        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #DD5579,0 0 35px #DD5579,0 0 40px #DD5579,0 0 45px #DD5579,0 0 50px #DD5579;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #DD5579,0 0 35px #DD5579,0 0 40px #DD5579,0 0 45px #DD5579,0 0 50px #DD5579;
+    }
+}
+
+@-webkit-keyframes flash {
+    0% {
+        background: aqua;
+    }
+
+    10% {
+        background: yellow;
+    }
+
+    20% {
+        background: fuchsia;
+    }
+
+    30% {
+        background: blue;
+    }
+
+    40% {
+        background: green;
+    }
+
+    50% {
+        background: lime;
+    }
+
+    60% {
+        background: #00ffff;
+    }
+
+    70% {
+        background: navy;
+    }
+
+    80% {
+        background: red;
+    }
+
+    90% {
+        background: teal;
+    }
+
+    100% {
+        background: white;
+    }
+}
+
+.layout-setting {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 20rpx;
+    padding-bottom: 20rpx;
+}
+
+.button-image {
+    margin-top: 10rpx;
+    color: #fff;
+    font-size: 30rpx;
+    border-radius: 40rpx;
+    padding-top: 0rpx;
+    padding-bottom: 0rpx;
+    background: #333333;
+    text-align: center;
+}
